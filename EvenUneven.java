@@ -8,11 +8,10 @@ public class EvenUneven {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите целое число больше 0");
         int n = scan.nextInt();
-        int m = n%2;
+        int m = n % 2;
         if (m == 0) {
             System.out.println("Число четное");
-        }
-        else System.out.println("Число нечетное");
+        } else System.out.println("Число нечетное");
 
     }
 }
