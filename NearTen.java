@@ -10,8 +10,8 @@ public class NearTen {
         double a = scan.nextDouble();
         System.out.println("Введите второе любое число b");
         double b = scan.nextDouble();
-        double n1 = 10.0 - a;
-        double n2 = 10.0 - b;
+        double n1 = a - 10.0;
+        double n2 = b - 10.0;
         if (n1 < n2) {
             System.out.println("число а ближе к 10 чем число b");
         } else {
