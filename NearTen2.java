@@ -17,10 +17,14 @@ public class NearTen2 {
         double n2 = c - b;
         if (n1 < n2) {
             System.out.println("число а ближе к числу " + c + " чем число b");
-        } else if (n1 > n2) {
-            System.out.println("число b ближе к числу " + c + " чем число a");
+        } else {
+            if (n1 > n2) {
+                System.out.println("число b ближе к числу " + c + " чем число a");
 
-        } else System.out.println("числа а и b находятся на одном расстоянии от числа " + c);
+            } else {
+                System.out.println("числа а и b находятся на одном расстоянии от числа " + c);
+            }
+        }
     }
 
 }
