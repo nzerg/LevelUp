@@ -7,11 +7,11 @@ public class NearTen {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите первое любое число а");
-        float a = scan.nextFloat();
+        double a = scan.nextDouble();
         System.out.println("Введите второе любое число b");
-        float b = scan.nextFloat();
-        float n1 = 10 - a;
-        float n2 = 10 - b;
+        double b = scan.nextDouble();
+        double n1 = 10.0 - a;
+        double n2 = 10.0 - b;
         if (n1 < n2) {
             System.out.println("число а ближе к 10 чем число b");
         } else if (n1 > n2) {

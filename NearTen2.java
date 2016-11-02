@@ -8,13 +8,13 @@ public class NearTen2 {
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите первое любое число а");
-        float a = scan.nextFloat();
+        double a = scan.nextDouble();
         System.out.println("Введите второе любое число b");
-        float b = scan.nextFloat();
+        double b = scan.nextDouble();
         System.out.println("Введите третье любое число c");
-        float c = scan.nextFloat();
-        float n1 = c - a;
-        float n2 = c - b;
+        double c = scan.nextFloat();
+        double n1 = c - a;
+        double n2 = c - b;
         if (n1 < n2) {
             System.out.println("число а ближе к числу " + c + " чем число b");
         } else if (n1 > n2) {
