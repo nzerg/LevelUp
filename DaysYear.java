@@ -10,10 +10,18 @@ public class DaysYear {
         int year = scan.nextInt();
         int a = year % 4;
         int b = year % 400;
-        if (a != 0) {
-            System.out.println("365 дней в вашем году");
-        } else if (b == 0) {
-            System.out.println("365 дней в вашем году");
-        } else System.out.println("366 дней в вашем году");
+        if (year >= 1000) {
+            if (a != 0) {
+                System.out.println("365 дней в вашем году");
+            } else {
+                if (b == 0) {
+                    System.out.println("365 дней в вашем году");
+                } else {
+                    System.out.println("366 дней в вашем году");
+                }
+            }
+        } else {
+            System.out.println("Год введен неверно");
+        }
     }
 }
