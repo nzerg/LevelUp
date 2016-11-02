@@ -12,7 +12,7 @@ public class FindMean {
         int b = scan.nextInt();
         System.out.println("Введите целое число c");
         int c = scan.nextInt();
-        int d = (b + a + c) / 3;
+        double d = (b + a + c) / 3;
         System.out.println("Среднее значение этих трех чисел равно " + d);
 
     }
