@@ -8,8 +8,9 @@ public class EvenUnevenTernar {
         Scanner scan = new Scanner(System.in);
         System.out.println("Введите целое число больше 0");
         int n = scan.nextInt();
-        int m = n % 2;
-        String a = m != 0 ? "Число нечетное" : "Число четное";
+        if (n > 0) {
+            String a = n % 2 != 0 ? "Число нечетное" : "Число четное";
         System.out.println(a);
+    } else System.out.println("Вы ввели число меньше или равно нулю");
     }
 }

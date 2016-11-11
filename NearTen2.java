@@ -12,9 +12,9 @@ public class NearTen2 {
         System.out.println("Введите второе любое число b");
         double b = scan.nextDouble();
         System.out.println("Введите третье любое число c");
-        double c = scan.nextFloat();
-        double n1 = a - c;
-        double n2 = b - c;
+        double c = scan.nextDouble();
+        double n1 = Math.abs(c - a);
+        double n2 = Math.abs(c - b);
         if (n1 < n2) {
             System.out.println("число а ближе к числу " + c + " чем число b");
         } else {
